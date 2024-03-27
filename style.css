@@ -1,0 +1,78 @@
+.navbar {
+    background-color: transparent;
+    backdrop-filter: blur(10px); 
+    width: 100%;
+}
+
+.navbar-brand{
+    font-family:'josefin sans';
+}
+
+header {
+    padding: 150px;
+}
+
+body img {
+    padding: 10px;
+    height: auto;
+    width: 100%;
+}
+
+tentang {
+    padding: 30px;
+    font-family: 'josefin sans';
+}
+
+skill{
+    margin-bottom: 50px;
+}
+
+serti {
+    padding: 30px;
+}
+
+.card img {
+   width: 90px
+}
+
+body {
+    background: linear-gradient(to top right, #ffffff, #008cffb0);
+    padding: 0; 
+    margin: 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    color:rgb(255, 255, 255);
+    display: flex;
+    padding-left: 30px;
+    padding-top: 5%;
+}
+
+.datadiri {
+    float: left;
+}
+
+.hal{
+    margin-left: 100px;
+    float: left;
+}
+
+.socmed {
+    margin-left: 40px;
+    float: left;
+}
+
+.social-icon{
+    width: 5vb;
+    height: auto;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
