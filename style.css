@@ -246,8 +246,6 @@ footer {
 .timeline-circle {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
     background-color: #000000;
@@ -257,6 +255,44 @@ footer {
 .timeline-item {
     margin-bottom: 50px;
     position: relative;
+    width: 100%;
+}
+
+.timeline-item.left .timeline-circle {
+    left: calc(50% - 10px);
+}
+
+.timeline-item.right .timeline-circle {
+    right: calc(50% - 10px);
+}
+
+.timeline-item .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.timeline-item.left .timeline-content {
+    float: left;
+    text-align: center;
+}
+
+.timeline-item.right .timeline-content {
+    float: right;
+    text-align: center;
+}
+
+.timeline-item .timeline-content h2 {
+    margin-top: 0;
+    color: #000000;
+}
+
+.timeline-item .timeline-date {
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
 .timeline-item:last-child {
@@ -269,29 +305,6 @@ footer {
     clear: both;
 }
 
-.timeline-item .timeline-content {
-    position: relative;
-    width:46%;
-    padding: 20px;
-    background-color:rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
-}
-
-.timeline-item .timeline-content h2 {
-    margin-top: 0;
-    color: #000000;
-}
-
-.timeline-item .timeline-date {
-    font-size: 12px;
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    float: right;
-}
 
 .split-background {
     display: flex;
